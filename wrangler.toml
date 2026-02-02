@@ -1,0 +1,23 @@
+# sudosupport-consulting - Sovereign Hub Network
+name = "sudosupport-consulting"
+pages_build_output_dir = "public"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Shared D1 Database for Unified Ecosystem
+[[d1_databases]]
+binding = "DB"
+database_name = "sudosupport-help-db"
+database_id = "b00b2e38-cf84-4a1f-bfd6-fd076fb707c0"
+
+# R2 Storage
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "sudosupport-help-files"
+
+[vars]
+ENVIRONMENT = "production"
+SITE_NAME = "SudoSupport Consulting"
+NETWORK = "Base L2"
+TOKEN_SYMBOL = "$SUDO"
+NFT_SYMBOL = "$DEED"

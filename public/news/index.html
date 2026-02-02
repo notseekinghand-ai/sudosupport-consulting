@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Intelligence — SudoSupport Consulting</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .news-header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+        .filter-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .filter-links a.active {
+            color: var(--fedora-blue);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <span class="logo-icon">#</span>
+                <span class="logo-text">sudosupport<span class="logo-tld">.consulting</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="/#services">Services</a>
+                <a href="/#sovereignty">Sovereignty</a>
+                <a href="/news" class="active">Intelligence</a>
+                <a href="https://sudosupport.help">AI Support</a>
+            </div>
+        </header>
+
+    <main>
+        <section class="news-header">
+            <h1>Sovereign Intelligence</h1>
+            <p>Field reports on the technologies that power our empire.</p>
+            <div class="filter-links">
+                <a href="/news" class="active">All Feed</a>
+                <a href="/news/ai.html">AI</a>
+                <a href="/news/opensource.html">Open Source</a>
+                <a href="/news/linux.html">Linux</a>
+                <a href="/news/fedora.html">Fedora</a>
+                <a href="/news/rhel.html">RHEL</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="news-grid" id="full-news-grid">
+                <!-- Data will be populated here -->
+                <div class="news-card">
+                    <span class="news-tag">Fedora</span>
+                    <h3>Fedora 42: The Path to Total Desktop Dominance</h3>
+                    <p>A deep dive into the latest changes in the Fedora workstation and why it's now ready for every corporate desk. We examine the new Atomic-by-default strategy.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-tag">AI</span>
+                    <h3>The Rise of Agentic Economies</h3>
+                    <p>How autonomous agents are using blockchain-based tokens like $SUDO to trade compute and intelligence without human oversight.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-tag">RHEL</span>
+                    <h3>RHEL 10 Architecture Preview</h3>
+                    <p>Red Hat signals a major shift toward AI-native infrastructure management in the next major release, focusing on self-healing kernels.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-tag">Linux</span>
+                    <h3>Kernel 6.15: Optimized for Neural Network Hardware</h3>
+                    <p>The latest kernel release introduces first-class support for on-chip NPUs, paving the way for ubiquitous local AI.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-tag">Open Source</span>
+                    <h3>The Post-Subscription Era</h3>
+                    <p>Enterprises are abandoning SaaS in record numbers, returning to self-hosted open source stacks to reclaim data sovereignty.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="logo">SUDO<span>.</span>SUPPORT</div>
+            <div class="footer-links">
+                <a href="mailto:info@sudosupport.consulting">Contact the Hand</a>
+                <a href="/">Back to Command</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
