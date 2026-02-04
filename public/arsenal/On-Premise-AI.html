@@ -3,68 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On-Premise AI - SudoSupport Arsenal</title>
+    <title>On-Premise AI - SudoSupport Consulting</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-icon">#</span>
-                <span class="logo-text">sudosupport<span class="logo-tld">.consulting</span></span>
-            </a>
-            <div class="nav-links">
-                <a href="/#services">Services</a>
-                <a href="/#arsenal">Arsenal</a>
-                <a href="/#intelligence">Intelligence</a>
-                <a href="/#philosophy">Philosophy</a>
-            </div>
-            <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><span>#</span>sudosupport.consulting</a>
+            <nav class="nav-links">
+                <a href="/services.html">Services</a>
+                <a href="/about.html">About</a>
+                <a href="/philosophy.html">Philosophy</a>
+                <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="section">
-            <h1 class="section-title">Arsenal: On-Premise AI</h1>
-            <p class="section-subtitle">Deploy private LLMs (Llama/Mistral) on your own hardware. Keep your intellectual property inside your own walls.</p>
-            
-            <div class="page-content" style="max-width: 800px; margin: 2rem auto; text-align: left;">
-                <h2>Your Intellectual Property is Sacred</h2>
-                <p>Using third-party AI services means sending your most sensitive data—your code, your strategies, your client information—to servers you do not control. This is an unacceptable risk. We empower your enterprise to harness the power of Large Language Models (LLMs) by deploying them on your own hardware, ensuring absolute data privacy and sovereignty.</p>
-
-                <h3>Key Advantages:</h3>
-                <ul>
-                    <li><strong>Absolute Data Privacy:</strong> Your data never leaves your network. All model inference and fine-tuning happens on your servers.</li>
-                    <li><strong>No Per-Query Costs:</strong> Move from a variable, subscription-based cost model to a fixed, owned-infrastructure model, dramatically reducing long-term AI expenses.</li>
-                    <li><strong>Customization and Fine-Tuning:</strong> We fine-tune open-source models like Llama 3 and Mistral on your proprietary data, creating specialized AI agents that understand your unique business context.</li>
-                    <li><strong>Uncensored and Unrestricted:</strong> On-premise models are not subject to the content filters or usage restrictions imposed by external providers.</li>
-                </ul>
-
-                <h2>Our Deployment Stack</h2>
-                <p>We provide a full-stack solution for on-premise AI, including hardware provisioning, installation of inference engines like Ollama with Open WebUI, and the development of custom Retrieval-Augmented Generation (RAG) pipelines to connect LLMs to your internal knowledge bases.</p>
+        <section class="hero">
+            <div class="container">
+                <h1>Arsenal: On-Premise AI</h1>
+                <p class="subtitle">Deploy private LLMs on your own hardware. Keep your intellectual property inside your own walls.</p>
             </div>
+        </section>
 
-             <div class="navigation" style="text-align: center; margin-top: 2rem;">
-                <a href="/#arsenal" class="btn btn-secondary">Back to Arsenal</a>
+        <section class="container" style="padding: 3rem 1.5rem;">
+            <div class="page-content" style="max-width: 800px; margin: 0 auto; background-color: var(--bg-card); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                <h2>Your Intellectual Property is Sacred</h2>
+                <p>Using third-party AI services means sending your most sensitive data to servers you do not control. This is an unacceptable risk. We empower you to harness the power of LLMs by deploying them on your own hardware, ensuring absolute data privacy and sovereignty.</p>
+
+                <h3 style="margin-top: 1.5rem;">Key Advantages:</h3>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><strong>Absolute Data Privacy:</strong> Your data never leaves your network. All model inference and fine-tuning happens on your servers.</li>
+                    <li><strong>No Per-Query Costs:</strong> Move from a variable, subscription-based cost model to a fixed, owned-infrastructure model.</li>
+                    <li><strong>Customization and Fine-Tuning:</strong> We fine-tune open-source models on your proprietary data to create specialized AI agents.</li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <a href="https://sudosupport.help" style="text-decoration: none; color: inherit;">
-                    <span class="logo-icon">$</span> sudosupport.help
-                </a>
-            </div>
-            <div class="footer-links">
-                <a href="/news">Intelligence Hub</a>
-                <a href="/about.html">About</a>
-                <a href="/consultation.html">Consultation</a>
-            </div>
-            <div class="footer-legal">
-                <p>© 2026 SudoSupport Consulting. Forged in the fires of Open Source.</p>
-            </div>
+    <footer class="site-footer" style="text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <p><a href="https://sudosupport.help">sudosupport.help</a></p>
         </div>
     </footer>
 </body>

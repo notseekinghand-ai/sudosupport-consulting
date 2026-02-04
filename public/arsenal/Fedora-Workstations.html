@@ -3,69 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fedora Workstations - SudoSupport Arsenal</title>
+    <title>Fedora Workstations - SudoSupport Consulting</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-icon">#</span>
-                <span class="logo-text">sudosupport<span class="logo-tld">.consulting</span></span>
-            </a>
-            <div class="nav-links">
-                <a href="/#services">Services</a>
-                <a href="/#arsenal">Arsenal</a>
-                <a href="/#intelligence">Intelligence</a>
-                <a href="/#philosophy">Philosophy</a>
-            </div>
-            <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><span>#</span>sudosupport.consulting</a>
+            <nav class="nav-links">
+                <a href="/services.html">Services</a>
+                <a href="/about.html">About</a>
+                <a href="/philosophy.html">Philosophy</a>
+                <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="section">
-            <h1 class="section-title">Arsenal: Fedora Workstations</h1>
-            <p class="section-subtitle">Cutting-edge productivity for developers and creators. No licenses, no telemetry, just raw performance.</p>
-            
-            <div class="page-content" style="max-width: 800px; margin: 2rem auto; text-align: left;">
+        <section class="hero">
+            <div class="container">
+                <h1>Arsenal: Fedora Workstations</h1>
+                <p class="subtitle">Cutting-edge productivity for developers and creators. No licenses, no telemetry, just raw performance.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 3rem 1.5rem;">
+            <div class="page-content" style="max-width: 800px; margin: 0 auto; background-color: var(--bg-card); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color);">
                 <h2>The Sovereign Desktop</h2>
                 <p>The desktop environment is the primary interface for your organization's talent. It should be a tool that empowers, not a system that extracts. Fedora Workstation is the premier open-source desktop operating system, providing a secure, stable, and powerful platform for the most demanding tasks. By migrating your teams to Fedora, you reclaim control from proprietary vendors like Microsoft and Apple.</p>
 
-                <h3>Key Advantages:</h3>
-                <ul>
+                <h3 style="margin-top: 1.5rem;">Key Advantages:</h3>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
                     <li><strong>No Licensing Fees:</strong> Eliminate the significant operational expense of Windows or macOS licenses. Fedora is free, forever.</li>
                     <li><strong>Zero Telemetry:</strong> Unlike Windows, Fedora does not collect or transmit user activity data. Your work remains your own.</li>
                     <li><strong>Up-to-Date Software:</strong> Fedora offers a balance of cutting-edge software with a stable core, providing access to the latest development tools and libraries.</li>
                     <li><strong>Enhanced Security:</strong> With a foundation in Red Hat Enterprise Linux and features like SELinux enabled by default, Fedora is one of the most secure desktop environments available.</li>
-                    <li><strong>Customizable and Flexible:</strong> We tailor Fedora deployments to your exact needs, with pre-configured software, security policies, and user environments.</li>
                 </ul>
-
-                <h2>Our Migration Process</h2>
-                <p>We provide a seamless, zero-downtime migration path from Windows to Fedora. Our process includes data transfer, application compatibility analysis, and user training to ensure a smooth transition and immediate productivity gains.</p>
-            </div>
-
-             <div class="navigation" style="text-align: center; margin-top: 2rem;">
-                <a href="/#arsenal" class="btn btn-secondary">Back to Arsenal</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <a href="https://sudosupport.help" style="text-decoration: none; color: inherit;">
-                    <span class="logo-icon">$</span> sudosupport.help
-                </a>
-            </div>
-            <div class="footer-links">
-                <a href="/news">Intelligence Hub</a>
-                <a href="/about.html">About</a>
-                <a href="/consultation.html">Consultation</a>
-            </div>
-            <div class="footer-legal">
-                <p>© 2026 SudoSupport Consulting. Forged in the fires of Open Source.</p>
-            </div>
+    <footer class="site-footer" style="text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <p><a href="https://sudosupport.help">sudosupport.help</a></p>
         </div>
     </footer>
 </body>
