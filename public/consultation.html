@@ -3,54 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultation - SudoSupport Consulting</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Request Consultation - SudoSupport Consulting</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Our Sovereign Economy</h1>
-    </header>
-    <main>
-        <section>
-            <p>To ensure transparency and align our incentives with our clients, SudoSupport operates on a decentralized foundation built on the Base L2 blockchain. This is not just technology for technology's sake; it is a core part of our commitment to a world without intermediaries.</p>
-            
-            <h3>Why Blockchain?</h3>
-            <ul>
-                <li><strong>Transparency:</strong> All funding and project expenditures can be publicly audited, ensuring funds are used to improve the system.</li>
-                <li><strong>Decentralization:</strong> By using a public blockchain, we escape the fees and control of traditional banking and payment processors.</li>
-                <li><strong>Ownership:</strong> The use of <code>$DEED</code> NFTs provides cryptographic proof of your relationship and stake within our ecosystem.</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Getting Started: Your Wallet is Your Key</h2>
-            <p>The consultation process requires a self-custody crypto wallet. The system does <strong>not</strong> create a wallet for you; you must provide your own. This ensures that you, and only you, have control over your digital identity and assets.</p>
-
-            <h3>1. Acquiring ETH on Base:</h3>
-            <p>Our network operates on Base, a secure and low-cost Ethereum Layer 2. To interact with it, you will need Ether (ETH) on the Base network for transaction fees (gas). You can acquire this by:</p>
-            <ul>
-                <li><strong>Bridging:</strong> If you already have ETH on Ethereum, you can move it to Base using the official <a href="https://bridge.base.org/" target="_blank" rel="noopener noreferrer">Base Bridge</a>.</li>
-                <li><strong>On-ramps:</strong> You can purchase ETH directly onto the Base network through services like Coinbase.</li>
-            </ul>
-
-            <h3>2. Recommended Wallets:</h3>
-            <p>If you are new to crypto, here are some user-friendly and secure wallets to get you started:</p>
-            <ul>
-                <li><a href="https://metamask.io/" target="_blank" rel="noopener noreferrer"><strong>MetaMask</strong></a>: The most popular browser-based wallet, compatible with nearly every dApp.</li>
-                <li><a href="https://www.coinbase.com/wallet" target="_blank" rel="noopener noreferrer"><strong>Coinbase Wallet</strong></a>: A very beginner-friendly wallet with excellent mobile and browser support.</li>
-                <li><a href="https://frame.sh/" target="_blank" rel="noopener noreferrer"><strong>Frame</strong></a>: A privacy-focused desktop wallet for Ethereum and its L2s.</li>
-            </ul>
-        </section>
-        <section class="wallet-submission">
-             <h2>Provide Your Wallet Address</h2>
-             <p>Once you have a wallet with ETH on the Base network, please enter your public wallet address below to proceed.</p>
-             <input type="text" id="walletAddress" placeholder="0x..." />
-             <button onclick="submitWallet()">Submit</button>
-             <p id="submissionStatus"></p>
-        </section>
-        <div class="navigation">
-            <a href="index.html">Back to Home</a>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><span>#</span>sudosupport.consulting</a>
+            <nav class="nav-links">
+                <a href="/services.html">Services</a>
+                <a href="/about.html">About</a>
+                <a href="/#philosophy">Philosophy</a>
+                <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
+            </nav>
         </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Our Sovereign Economy</h1>
+                <p class="subtitle">To begin the consultation process, you must provide a wallet address on the Base L2 network. This is the foundation of our transparent, decentralized partnership.</p>
+            </div>
+        </section>
+
+        <section class="container" style="padding: 3rem 1.5rem;">
+            <div class="page-content" style="max-width: 800px; margin: 0 auto; background-color: var(--bg-card); padding: 2rem; border-radius: var(--radius); border: 1px solid var(--border-color);">
+                <h2>Your Wallet is Your Key</h2>
+                <p>The consultation process requires a self-custody crypto wallet. We do not create one for you; you must provide your own. This ensures you alone have control over your digital identity.</p>
+
+                <h3 style="margin-top: 1.5rem;">1. Acquire ETH on Base</h3>
+                <p>Our network operates on Base, a secure, low-cost Ethereum Layer 2. You will need ETH on Base for transaction fees. You can acquire this by bridging from Ethereum or using an on-ramp like Coinbase.</p>
+
+                <h3 style="margin-top: 1.5rem;">2. Recommended Wallets</h3>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                    <li><a href="https://metamask.io/" target="_blank">MetaMask</a></li>
+                    <li><a href="https://www.coinbase.com/wallet" target="_blank">Coinbase Wallet</a></li>
+                    <li><a href="https://frame.sh/" target="_blank">Frame</a></li>
+                </ul>
+
+                <h3 style="margin-top: 2rem;">3. Provide Your Address</h3>
+                <p>Once you have a wallet, enter your public address below to proceed.</p>
+                <div class="wallet-form" style="margin-top: 1rem;">
+                    <input type="text" id="walletAddress" placeholder="0x..." style="width: 100%; padding: 0.75rem; border-radius: var(--radius); border: 1px solid var(--border-color); background-color: var(--bg-secondary); color: var(--text-primary);">
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <script src="scripts.js"></script>
+
+    <footer class="site-footer" style="text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <p><a href="https://sudosupport.help">sudosupport.help</a></p>
+        </div>
+    </footer>
 </body>
 </html>
