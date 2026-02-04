@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation - SudoSupport Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Sovereign Economy</h1>
+    </header>
+    <main>
+        <section>
+            <p>To ensure transparency and align our incentives with our clients, SudoSupport operates on a decentralized foundation built on the Base L2 blockchain. This is not just technology for technology's sake; it is a core part of our commitment to a world without intermediaries.</p>
+            
+            <h3>Why Blockchain?</h3>
+            <ul>
+                <li><strong>Transparency:</strong> All funding and project expenditures can be publicly audited, ensuring funds are used to improve the system.</li>
+                <li><strong>Decentralization:</strong> By using a public blockchain, we escape the fees and control of traditional banking and payment processors.</li>
+                <li><strong>Ownership:</strong> The use of <code>$DEED</code> NFTs provides cryptographic proof of your relationship and stake within our ecosystem.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Getting Started: Your Wallet is Your Key</h2>
+            <p>The consultation process requires a self-custody crypto wallet. The system does <strong>not</strong> create a wallet for you; you must provide your own. This ensures that you, and only you, have control over your digital identity and assets.</p>
+
+            <h3>1. Acquiring ETH on Base:</h3>
+            <p>Our network operates on Base, a secure and low-cost Ethereum Layer 2. To interact with it, you will need Ether (ETH) on the Base network for transaction fees (gas). You can acquire this by:</p>
+            <ul>
+                <li><strong>Bridging:</strong> If you already have ETH on Ethereum, you can move it to Base using the official <a href="https://bridge.base.org/" target="_blank" rel="noopener noreferrer">Base Bridge</a>.</li>
+                <li><strong>On-ramps:</strong> You can purchase ETH directly onto the Base network through services like Coinbase.</li>
+            </ul>
+
+            <h3>2. Recommended Wallets:</h3>
+            <p>If you are new to crypto, here are some user-friendly and secure wallets to get you started:</p>
+            <ul>
+                <li><a href="https://metamask.io/" target="_blank" rel="noopener noreferrer"><strong>MetaMask</strong></a>: The most popular browser-based wallet, compatible with nearly every dApp.</li>
+                <li><a href="https://www.coinbase.com/wallet" target="_blank" rel="noopener noreferrer"><strong>Coinbase Wallet</strong></a>: A very beginner-friendly wallet with excellent mobile and browser support.</li>
+                <li><a href="https://frame.sh/" target="_blank" rel="noopener noreferrer"><strong>Frame</strong></a>: A privacy-focused desktop wallet for Ethereum and its L2s.</li>
+            </ul>
+        </section>
+        <section class="wallet-submission">
+             <h2>Provide Your Wallet Address</h2>
+             <p>Once you have a wallet with ETH on the Base network, please enter your public wallet address below to proceed.</p>
+             <input type="text" id="walletAddress" placeholder="0x..." />
+             <button onclick="submitWallet()">Submit</button>
+             <p id="submissionStatus"></p>
+        </section>
+        <div class="navigation">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
