@@ -3,272 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SudoSupport Consulting — International Open Source Consulting</title>
-    <meta name="description" content="International Open Source Consulting. Linux migration and open-source infrastructure consulting. Focused on Fedora and RHEL for enterprise sovereignty.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>SudoSupport Consulting — Sovereign Infrastructure</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <span class="logo-icon">#</span>
-                <span class="logo-text">sudosupport<span class="logo-tld">.consulting</span></span>
-            </a>
-            <div class="nav-links">
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo"><span>#</span>sudosupport.consulting</a>
+            <nav class="nav-links">
                 <a href="#services">Services</a>
                 <a href="#arsenal">Arsenal</a>
-                <a href="#intelligence">Intelligence</a>
                 <a href="#philosophy">Philosophy</a>
-            </div>
-            <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
-        </nav>
+                <a href="/consultation.html" class="btn btn-primary">Request Consultation</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">⚔️ International Open Source Consulting</div>
+            <div class="container">
                 <h1>Eliminate the Microsoft Tax.<br>Secure Your Iron.</h1>
-                <p class="hero-description">
-                    We migrate enterprises from proprietary chains to open-source fortresses. 
-                    Standardize on Fedora and RHEL to gain total control over your infrastructure.
-                </p>
-                <div class="hero-cta">
-                    <a href="/consultation.html" class="btn btn-large btn-primary">
-                        Request Consultation
+                <p class="subtitle">We migrate enterprises from proprietary chains to open-source fortresses. Standardize on Fedora and RHEL to gain total control over your infrastructure.</p>
+                <div class="cta-buttons">
+                    <a href="/consultation.html" class="btn btn-primary">Begin Consultation</a>
+                    <a href="#arsenal" class="btn btn-secondary">Explore Our Arsenal</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="arsenal" class="arsenal-section">
+            <div class="container">
+                <h2 style="text-align: center;">The SudoSupport Arsenal</h2>
+                <div class="card-grid">
+                    <a href="/arsenal/Fedora-Workstations.html" class="card">
+                        <div class="icon">🐧</div>
+                        <h3>Fedora Workstations</h3>
+                        <p>Cutting-edge productivity for developers and creators. No licenses, no telemetry, just raw performance.</p>
                     </a>
-                    <a href="#services" class="btn btn-large btn-secondary">
-                        Explore Our Arsenal
+                    <a href="/arsenal/RHEL-Infrastructure.html" class="card">
+                        <div class="icon">🛡️</div>
+                        <h3>RHEL Infrastructure</h3>
+                        <p>The industry standard for enterprise Linux, hardened for absolute stability and security.</p>
+                    </a>
+                    <a href="/arsenal/On-Premise-AI.html" class="card">
+                        <div class="icon">🤖</div>
+                        <h3>On-Premise AI</h3>
+                        <p>Deploy private LLMs on your own hardware. Keep your intellectual property inside your own walls.</p>
+                    </a>
+                    <a href="/arsenal/Private-Cloud-Stack.html" class="card">
+                        <div class="icon">☁️</div>
+                        <h3>Private Cloud Stack</h3>
+                        <p>A complete replacement for the M365 and Google ecosystems using Nextcloud, LibreOffice, and Mailcow.</p>
+                    </a>
+                    <a href="/arsenal/Hardened-Identity.html" class="card">
+                        <div class="icon">🔧</div>
+                        <h3>Hardened Identity</h3>
+                        <p>OpenLDAP and Keycloak implementations to replace Active Directory and proprietary SSO providers.</p>
+                    </a>
+                    <a href="/arsenal/L2-Payment-Rails.html" class="card">
+                        <div class="icon">⛓️</div>
+                        <h3>L2 Payment Rails</h3>
+                        <p>Settlement on the Base L2 layer for instant, low-cost sovereign transactions.</p>
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-value">70%</span>
-                        <span class="stat-label">Cost Reduction</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value">100%</span>
-                        <span class="stat-label">Data Sovereignty</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-value">Native</span>
-                        <span class="stat-label">AI Integration</span>
-                    </div>
-                </div>
             </div>
-            <div class="hero-visual">
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">establish_sovereignty.sh</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="chat-message system">
-                            <span class="chat-sender">#</span>
-                            <span class="chat-content">Scanning infrastructure...</span>
-                        </div>
-                        <div class="chat-message system">
-                            <span class="chat-sender">#</span>
-                            <span class="chat-content">Microsoft Tax: High Detected.</span>
-                        </div>
-                        <div class="chat-message agent">
-                            <span class="chat-sender">#</span>
-                            <span class="chat-content">Executing: dnf install sovereignty-core</span>
-                        </div>
-                        <div class="chat-message agent">
-                            <span class="chat-sender">#</span>
-                            <span class="chat-content">Deploying: Fedora Workstations + RHEL Core</span>
-                        </div>
-                        <div class="chat-message solution">
-                            <span class="chat-sender">[OK]</span>
-                            <span class="chat-content">Infrastructure Secured. Proprietary chains broken.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-        <section id="services" class="section">
-            <h2 class="section-title">The Path to Freedom</h2>
-            <p class="section-subtitle">A tactical roadmap for enterprise technical sovereignty</p>
-            
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Strategic Audit</h3>
-                        <p>We analyze your current proprietary spend and telemetry exposure. We identify every chain holding your data hostage.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Evacuation & Migration</h3>
-                        <p>Total migration of your OS, identity management, and productivity stack. We move you to Fedora and RHEL without downtime.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Continuous Sovereignty</h3>
-                        <p>Ongoing management of your private AI and Linux infrastructure. We ensure your metal stays yours, forever.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- The Arsenal (OS Focus) -->
-        <section id="arsenal" class="section section-dark">
-            <h2 class="section-title">The SudoSupport Arsenal</h2>
-            <p class="section-subtitle">Hardened distributions for high-stakes environments</p>
-            
-            <div class="agents-grid">
-                <a href="/arsenal/Fedora-Workstations.html" class="agent-card">
-                    <div class="agent-icon">🐧</div>
-                    <h3>Fedora Workstations</h3>
-                    <p>Cutting-edge productivity for developers and creators. No licenses, no telemetry, just raw performance.</p>
-                </a>
-                <a href="/arsenal/RHEL-Infrastructure.html" class="agent-card">
-                    <div class="agent-icon">🛡️</div>
-                    <h3>RHEL Infrastructure</h3>
-                    <p>The industry standard for enterprise Linux. We harden your core servers for absolute stability and security.</p>
-                </a>
-                <a href="/arsenal/On-Premise-AI.html" class="agent-card">
-                    <div class="agent-icon">🤖</div>
-                    <h3>On-Premise AI</h3>
-                    <p>Deploy private LLMs (Llama/Mistral) on your own hardware. Keep your intellectual property inside your own walls.</p>
-                </a>
-                <a href="/arsenal/Private-Cloud-Stack.html" class="agent-card">
-                    <div class="agent-icon">☁️</div>
-                    <h3>Private Cloud Stack</h3>
-                    <p>Nextcloud + LibreOffice + Mailcow. A complete replacement for the M365 and Google ecosystems.</p>
-                </a>
-                <a href="/arsenal/Hardened-Identity.html" class="agent-card">
-                    <div class="agent-icon">🔧</div>
-                    <h3>Hardened Identity</h3>
-                    <p>OpenLDAP and Keycloak implementations to replace Active Directory and proprietary SSO providers.</p>
-                </a>
-                <a href="/arsenal/Sovereign-Monitoring.html" class="agent-card">
-                    <div class="agent-icon">📊</div>
-                    <h3>Sovereign Monitoring</h3>
-                    <p>Full-stack observability using Uptime Kuma and Netdata. Know exactly what your hardware is doing.</p>
-                </a>
-                <a href="/arsenal/L2-Payment-Rails.html" class="agent-card">
-                    <div class="agent-icon">⛓️</div>
-                    <h3>L2 Payment Rails</h3>
-                    <p>Settlement on the Base L2 layer. Instant, low-cost sovereign transactions without banking intermediaries.</p>
-                </a>
-            </div>
-        </section>
-
-        <!-- Philosophy Section -->
-        <section id="philosophy" class="section">
-            <h2 class="section-title">The SudoSupport Manifesto</h2>
-            <p class="section-subtitle">Our core principles for dominion through technology</p>
-            
-            <div class="about-text" style="max-width: 800px; margin: 0 auto 3rem; text-align: center; color: var(--text-secondary);">
-                <p>SudoSupport Consulting is an International Open Source Consulting firm dedicated to liberating enterprises from proprietary shackles. 
-                We engineer sovereign infrastructure using battle-tested open-source technologies. 
-                Our mission is simple: Total control, zero rent-seeking, and absolute data privacy.</p>
-            </div>
-
-            <div class="safety-grid">
-                <div class="safety-item">
-                    <div class="safety-icon">📜</div>
-                    <h3>Freedom over Fees</h3>
-                    <p>Software should be a tool you own, not a service you rent. We exclusively use and deploy open-source solutions.</p>
-                </div>
-                <div class="safety-item">
-                    <div class="safety-icon">⛓️</div>
-                    <h3>Sovereignty over Subscriptions</h3>
-                    <p>Your data belongs on your metal. We eliminate the telemetry and data harvesting inherent in proprietary clouds.</p>
-                </div>
-                <div class="safety-item">
-                    <div class="safety-icon">🚫</div>
-                    <h3>No Rent-Seeking</h3>
-                    <p>We do not register IP for monetary gain. We don't participate in government rent-seeking. We build for the open world.</p>
-                </div>
-                <div class="safety-item">
-                    <div class="safety-icon">⚖️</div>
-                    <h3>POPIA by Default</h3>
-                    <p>Compliance is not an add-on. Our Linux architectures are designed with built-in encryption and privacy controls.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Intelligence Feed (News) -->
-        <section id="intelligence" class="section section-dark">
-            <h2 class="section-title">Sovereign Intelligence</h2>
-            <p class="section-subtitle">Real-time reports from the frontier of open intelligence</p>
-            
-            <div class="news-grid">
-                <div class="news-card">
-                    <span class="news-tag">Fedora</span>
-                    <h3>Fedora 42: The path to Total Dominance</h3>
-                    <p>A deep dive into why Fedora is now the premier choice for corporate workstations in 2026.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">AI</span>
-                    <h3>The Rise of Agentic Economies</h3>
-                    <p>How agents are using $SUDO and the x402 protocol to trade compute and solve complex infrastructure issues.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">RHEL</span>
-                    <h3>RHEL 10 Architecture Preview</h3>
-                    <p>Red Hat signals a major shift toward self-healing, AI-native infrastructure management.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">Linux</span>
-                    <h3>Kernel 6.18: NPU Optimization</h3>
-                    <p>The latest kernel introduces first-class support for on-chip neural processors, enabling ubiquitous local AI.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">OpenSource</span>
-                    <h3>The Post-Subscription Era</h3>
-                    <p>Why enterprises are abandoning SaaS in record numbers to reclaim their technical sovereignty.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">SudoSupport</span>
-                    <h3>Platform Update: SafeAgent 2.0</h3>
-                    <p>Our safety wrapper now includes advanced prompt injection defense for all automated specialist agents.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="section section-cta">
-            <h2>Establish Your Sovereignty</h2>
-            <p>Schedule a technical audit and begin your migration to the open source fortress.</p>
-            <a href="/consultation.html" class="btn btn-large btn-primary">
-                Request Consultation
-            </a>
-            <p class="cta-subtext">International Open Source Consulting</p>
         </section>
     </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <a href="https://sudosupport.help" style="text-decoration: none; color: inherit;">
-                    <span class="logo-icon">$</span> sudosupport.help
-                </a>
-            </div>
-            <div class="footer-links">
-                <a href="/news">Intelligence Hub</a>
-                <a href="/about.html">About</a>
-                <a href="/consultation.html">Consultation</a>
-            </div>
-            <div class="footer-legal">
-                <p>© 2026 SudoSupport Consulting. Forged in the fires of Open Source.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>

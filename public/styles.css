@@ -1,15 +1,157 @@
+/* SudoSupport Design System - Fedora Inspired Overhaul */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=JetBrains+Mono:wght@700&display=swap');
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+:root {
+    --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* Dark Theme Palette */
+    --bg-primary: #0F121B;
+    --bg-secondary: #1A1E29;
+    --bg-card: #202431;
+    --border-color: #313645;
+    
+    --text-primary: #FFFFFF;
+    --text-secondary: #A0AEC0;
+    --text-heading: #FFFFFF;
+
+    /* Brand Colors */
+    --brand-blue: #2563EB; /* A vibrant blue inspired by Fedora */
+    --brand-gold: #D97706; /* Our sovereign accent */
+    
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --radius: 8px;
 }
 
-main > section {
-    animation: fadeIn 0.8s ease-out forwards;
+/* Base & Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+    color: var(--text-heading);
+    letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; }
+h2 { font-size: clamp(2rem, 4vw, 2.5rem); }
+p { margin-bottom: 1rem; }
+a { color: var(--brand-blue); text-decoration: none; transition: color 0.2s; }
+a:hover { color: #60A5FA; }
+
+/* Layout */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header */
+.site-header {
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(15, 18, 27, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.logo span { color: var(--brand-blue); }
+
+.nav-links a {
+    margin-left: 2rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+}
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius);
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.2s;
+}
+.btn-primary {
+    background-color: var(--brand-blue);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #1D4ED8;
+    transform: translateY(-2px);
+}
+.btn-secondary {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+}
+.hero h1 {
+    margin-bottom: 1rem;
+}
+.hero .subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+.hero .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--brand-blue);
+    box-shadow: 0 10px 20px var(--shadow-color);
+}
+.card .icon { font-size: 2rem; margin-bottom: 1rem; color: var(--brand-blue); }
+.card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
