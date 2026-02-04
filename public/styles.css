@@ -1,24 +1,22 @@
 /* Unified SudoSupport Design System */
 :root {
-    --bg-primary: #05070a;
-    --bg-secondary: #0c0e14;
-    --bg-tertiary: #161a22;
-    --bg-card: #0d1117;
+    --bg-primary: #0A0A0A;
+    --bg-secondary: #111111;
+    --bg-tertiary: #1A1A1A;
+    --bg-card: #0D0D0D;
     
-    --text-primary: #f0f3f6;
-    --text-secondary: #8b949e;
-    --text-muted: #6e7681;
+    --text-primary: #EDEDED;
+    --text-secondary: #A0A0A0;
+    --text-muted: #666666;
     
     /* Branding Colors */
-    --fedora-blue: #3c6eb4;
-    --rhel-red: #ee0000;
+    --accent-gold: #FFB800;
+    --accent-blue: #3c6eb4;
     --terminal-green: #3fb950;
-    --accent-blue: #58a6ff;
-    --accent-purple: #a371f7;
     
-    --border: #21262d;
-    --border-light: #30363d;
-    --border-subtle: #1b1f23;
+    --border: #222222;
+    --border-light: #333333;
+    --border-subtle: #181818;
     
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -126,12 +124,14 @@ nav {
 }
 
 .btn-primary {
-    background: var(--fedora-blue);
-    color: white;
+    background: var(--accent-gold);
+    color: #111;
+    border-color: var(--accent-gold);
 }
 
 .btn-primary:hover {
-    background: #2d508e;
+    background: #FFC94A;
+    border-color: #FFC94A;
     transform: translateY(-1px);
 }
 
@@ -288,17 +288,24 @@ nav {
     gap: 2rem;
 }
 
-.agent-card, .news-card {
+.agent-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     padding: 2rem;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
+    display: block; /* Make the whole area a link */
+    color: var(--text-primary); /* Reset link color */
 }
 
-.agent-card:hover, .news-card:hover {
-    border-color: var(--fedora-blue);
-    transform: translateY(-2px);
+.agent-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.agent-card h3 {
+    color: var(--text-primary);
 }
 
 .agent-icon {
